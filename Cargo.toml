@@ -1,0 +1,8 @@
+[package]
+name = "gs-core"
+version = "0.1.0"
+edition = "2024"
+description = "Geert Virtual Machine - a stack-based VM for dynamic OO scripting languages"
+authors = ["Geert Vos"]
+
+[dependencies]
