@@ -80,6 +80,8 @@ impl NativeModule for MyModule {
 | 29     | DUP        | Duplicate top of stack               |
 | 30     | MOD        | Modulo                               |
 | 31     | THROW      | Throw exception                      |
+| 32     | DEBUG      | Set source line number and location  |
+| 33     | BREAKPOINT | Log current source line to stdout    |
 | 34     | LDC_D      | Load typed constant                  |
 | 35     | GETDYNAMIC | Dynamic scope lookup                 |
 | 37     | FORK       | Fork execution thread                |

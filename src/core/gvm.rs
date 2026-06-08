@@ -161,7 +161,6 @@ impl Gvm {
 
         self.threads[main_idx].bytecode = bytecode;
         self.fetch_and_decode_all();
-        println!("> VM exited normal");
     }
 
     pub fn inject(&mut self, thread_idx: usize) {
@@ -677,8 +676,7 @@ impl Gvm {
                     }
                 }
             }
-            eprintln!("{}", message);
-            std::process::exit(1);
+            panic!("{}", message);
         }
     }
 }
